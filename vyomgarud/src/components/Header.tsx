@@ -1,8 +1,6 @@
 "use client";
-import React, { act, useState } from "react";
-import { HoveredLink, Menu,MenuItem,ProductItem } from "./ui/navbar-menu";
-
-
+import { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 
 export function Header() {
   const [active, setActive] = useState<string | null>(null);
@@ -10,7 +8,6 @@ export function Header() {
   return (
     <header className=" border-b items-center bg-white/100 dark:bg-black">
       <div className="mx-auto flex h-20 w-[800px] items-center justify-between  px-10">
-        
         {/* Logo */}
         <div className="text-2xl font-bold text-black dark:text-white">
           VyomGarud
@@ -37,9 +34,15 @@ export function Header() {
 
           <MenuItem setActive={setActive} active={active} item="Solutions">
             <div className="flex flex-col space-y-2 p-2">
-              <HoveredLink href="/solutions/defence">Defence Systems</HoveredLink>
-              <HoveredLink href="/solutions/surveillance">Surveillance & ISR</HoveredLink>
-              <HoveredLink href="/solutions/industrial">Industrial Automation</HoveredLink>
+              <HoveredLink href="/solutions/defence">
+                Defence Systems
+              </HoveredLink>
+              <HoveredLink href="/solutions/surveillance">
+                Surveillance & ISR
+              </HoveredLink>
+              <HoveredLink href="/solutions/industrial">
+                Industrial Automation
+              </HoveredLink>
             </div>
           </MenuItem>
 
@@ -59,7 +62,6 @@ export function Header() {
             </div>
           </MenuItem>
         </Menu>
-
       </div>
     </header>
   );

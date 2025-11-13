@@ -12,16 +12,18 @@ const FeatureItem = ({ title, description }: FeatureItemProps) => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.9, ease: "easeIn" }}
       viewport={{ once: true, amount: 0.3 }}
-      className="w-full max-w-[600px] max-h-[500px] mx-auto p-4 rounded-xl border shadow-sm hover:shadow-md transition-all bg-white dark:bg-neutral-900"
+      className="w-full p max-w-[550px] h-[450px] bg-gradient-to-tr from-[#C2B280]
+ from-10% to-[#36454F] to-90%
+   mx-auto p-5 rounded-xl border shadow-sm hover:shadow-md transition-all  dark:bg-neutral-900"
     >
       <div className="flex flex-col gap-3 ">
         <img
-          src="/images/drone1.jpg"
+          src="/images/drone9.jpg"
           alt={title}
-          className="w-full h-full sm:h-36 object-cover rounded-md shadow-sm"
+          className="w-full h-full sm:h-45 object-cover object-left rounded-md shadow-sm"
         />
-        <h3 className="text-lg text-orange-800 font-bold">{title}</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300">
+        <h3 className="text-2xl text-gray-950 font-bold">{title}</h3>
+        <p className="text-lg font-semibold text-gray-200 dark:text-gray-300">
           {description}
         </p>
       </div>
