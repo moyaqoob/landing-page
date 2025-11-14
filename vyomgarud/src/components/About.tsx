@@ -8,7 +8,7 @@ const About = () => {
   
 
   return (
-    <div className="px-4 py-8 pb-10 ">
+    <div className="px-4 py-7 pt-2 pb-10 ">
       <motion.h1
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
