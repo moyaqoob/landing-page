@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Features from "./components/Features";
@@ -8,7 +7,6 @@ import Highlights from "./components/Highlights";
 import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div className="max-w-screen min-h-screen">

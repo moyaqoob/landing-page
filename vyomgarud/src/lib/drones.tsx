@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
 import { droneData } from "./config";
 
-const fadeUp = {
-  initial: { opacity: 0, y: 30 },
-  whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: "easeOut" },
-  viewport: { once: true, amount: 0.3 },
-};
 
 export const droneSlides = droneData.map((drone: any) => (
   <motion.div
@@ -17,14 +11,12 @@ export const droneSlides = droneData.map((drone: any) => (
     viewport={{ once: true, amount: 0.3 }}
     className="bg-white  flex    p-6 shadow-lg"
   >
-    {/* LEFT — IMAGE (no animation) */}
     <div className=" flex justify-center items-center">
       <motion.img  src={drone.image} className="w-full h-auto border-4 border-r-12 border-black rounded-xl" />
     </div>
 
   
 
-    {/* RIGHT — DETAILS */}
     <div className="w-1/2">
       <h3 className="text-2xl font-bold mb-4">{drone.name}</h3>
 

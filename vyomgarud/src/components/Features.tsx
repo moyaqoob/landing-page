@@ -1,10 +1,9 @@
 import { features } from "../lib/config";
-import { AuroraBackground } from "./ui/aurora-background";
 import FeatureItem from "./ui/FeatureItem";
 import {motion} from "framer-motion"
 const Features = () => {
   return (
-      <section className="pt-10 pb-20 bg-gray-300/55">
+      <section className="pt-10 pb-20 ">
         <div className="mx-auto max-w-7xl px-4">
           {/* Title */}
           <motion.h2
@@ -21,6 +20,7 @@ const Features = () => {
           {features.map((item, index) => (
             <FeatureItem
               key={index}
+              image={item.image}
               title={item.title}
               description={item.description}
             />

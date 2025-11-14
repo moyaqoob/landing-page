@@ -8,135 +8,80 @@ import {
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
+
+
 const Footer = () => {
   return (
-    <footer className="bg-neutral-primary">
-      <div className="mx-auto w-full max-w-screen-xl">
-        <div className="grid grid-cols-2 gap-8 px-4  lg:py-8 md:grid-cols-4">
-          {/* first line */}
+      <div className="w-full max-w-screen  ">
+        
+        {/* Top Section */}
+        <div className="flex items-center justify-around ">
+          
+          {/* Company */}
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-heading uppercase">
+            <h2 className="mb-4 text-sm font-semibold text-heading uppercase tracking-wide">
               Company
             </h2>
-            <ul className="text-body font-medium">
-              <li className="mb-4">
-                <a href="#" className=" hover:underline">
-                  About
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Careers
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Brand Center
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/* second line */}
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-heading uppercase">
-              Help center
-            </h2>
-            <ul className="text-body font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Discord Server
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Twitter
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Facebook
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Contact Us
-                </a>
-              </li>
+            <ul className="space-y-3 text-body">
+              <li><a href="#" className="hover:underline">About</a></li>
+              <li><a href="#" className="hover:underline">Careers</a></li>
+              <li><a href="#" className="hover:underline">Brand Center</a></li>
+              <li><a href="#" className="hover:underline">Blog</a></li>
             </ul>
           </div>
 
-          {/* third line */}
+          {/* Help Center */}
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-heading uppercase">
-              Legal
+            <h2 className="mb-4 text-sm font-semibold text-heading uppercase tracking-wide">
+              Help Center
             </h2>
-            <ul className="text-body font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Licensing
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
-                </a>
-              </li>
+            <ul className="space-y-3 text-body">
+              <li><a href="#" className="hover:underline">Discord Server</a></li>
+              <li><a href="#" className="hover:underline">Twitter</a></li>
+              <li><a href="#" className="hover:underline">Facebook</a></li>
+              <li><a href="#" className="hover:underline">Contact Us</a></li>
             </ul>
           </div>
 
-          {/* form */}
-          <form >
-            <div className="space-x-2 space-y-2 pb-2 ">
-              <Label className="">Name</Label>
-              <Input placeholder="Enter your Name" />
-            </div>
-            <div className="space-y-2 pb-4">
-              <Label className="">Email</Label>
-              <Input placeholder="Enter your Email" />
-            </div>
-            <Button className="p-2">Submit</Button>
-          </form>
+          {/* Contact Form */}
+          <div className="md:col-span-2 lg:col-span-1">
+            <h2 className="mb-4 text-sm font-semibold text-heading uppercase tracking-wide">
+              Contact Us
+            </h2>
+            <form className="space-y-4">
+              <div className="space-y-1">
+                <Label>Name</Label>
+                <Input placeholder="Enter your name" />
+              </div>
+              <div className="space-y-1">
+                <Label>Email</Label>
+                <Input placeholder="Enter your email" type="email" />
+              </div>
+              <Button type="submit" className="w-full">Submit</Button>
+            </form>
+          </div>
+
         </div>
-        <div className="px-4 py-6 bg-neutral-secondary-soft md:flex md:items-center md:justify-between">
-          <span className="text-sm text-body sm:text-center">
-            © 2023 <a href="https://flowbite.com/">VyomGarud™</a>. All Rights
-            Reserved.
+
+        {/* Bottom Section */}
+        <div className="mt-10 border-t border-gray-400 pt-6 flex flex-col md:flex-row items-center justify-between">
+          
+          <span className="text-sm text-body">
+            © 2023 <span className="font-semibold">VyomGarud™</span>. All Rights Reserved.
           </span>
-          <div className="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
-            <a href="#" className="text-body hover:text-heading">
-              <FaFacebook />
-              <span className="sr-only">Facebook page</span>
-            </a>
-            <a href="#" className="text-body hover:text-heading ms-5">
-              <FaDiscord />
-              <span className="sr-only">Discord community</span>
-            </a>
-            <a href="#" className="text-body hover:text-heading ms-5">
-              <FaTwitter />
-              <span className="sr-only">Twitter page</span>
-            </a>
-            <a href="#" className="text-body hover:text-heading ms-5">
-              <FaGithub />
-              <span className="sr-only">GitHub account</span>
-            </a>
-            <a href="#" className="text-body hover:text-heading ms-5">
-              <FaDribbble />
-            </a>
+
+          <div className="flex items-center mt-4 md:mt-0 space-x-5 text-body">
+            <a href="#" className="hover:text-heading"><FaFacebook /></a>
+            <a href="#" className="hover:text-heading"><FaDiscord /></a>
+            <a href="#" className="hover:text-heading"><FaTwitter /></a>
+            <a href="#" className="hover:text-heading"><FaGithub /></a>
+            <a href="#" className="hover:text-heading"><FaDribbble /></a>
           </div>
+
         </div>
       </div>
-    </footer>
   );
 };
 
 export default Footer;
+

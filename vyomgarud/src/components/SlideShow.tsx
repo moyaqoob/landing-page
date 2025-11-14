@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useRef, useState, type ReactElement } from "react";
-import {ArrowBigLeft, ArrowBigRight, ArrowLeftSquare, ArrowRightSquare} from "lucide-react"
+import { useCallback, useRef, useState, type ReactElement } from "react";
+import { ArrowLeftSquare, ArrowRightSquare} from "lucide-react"
 type SlideShowProps = {
   slides: ReactElement[]; // accept React elements, not just images
   interval?: number;
@@ -8,8 +8,6 @@ type SlideShowProps = {
 
 export default function SlideShow({
   slides,
-  interval = 4000,
-  height = 400,
 }: SlideShowProps) {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<number | null>(null);
@@ -50,7 +48,7 @@ export default function SlideShow({
 
   return (
     <div
-      className="relative overflow-hidden "
+      className="relative overflow-hidden  "
       onMouseEnter={handleMouseEnter}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}

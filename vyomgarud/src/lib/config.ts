@@ -1,25 +1,30 @@
 export const features = [
   {
+    image:1,
     title: "Precision Navigation & Targeting",
     description:
       "Integrated sensor fusion and precision guidance deliver centimeter-level targeting and stable loitering even in GPS-denied or cluttered environments.",
   },
   {
+    image:2,
     title: "Autonomous Mission Systems",
     description:
       "Onboard AI and deterministic flight control enable autonomous waypoint navigation, safe obstacle avoidance, and dynamic re-tasking in-flight.",
   },
   {
+    image:3,
     title: "Encrypted Long-Range Communications",
     description:
       "Secure, redundant datalinks with anti-jamming and mesh networking provide resilient beyond-line-of-sight command and telemetry.",
   },
   {
+    image:4,
     title: "High-Efficiency Powertrain",
     description:
       "Optimized propulsion and energy management extend mission endurance while minimizing thermal and acoustic signatures.",
   },
   {
+    image:5,
     title: "Autonomous Mission Systems",
     description:
       "Onboard AI and deterministic flight control enable autonomous waypoint navigation, safe obstacle avoidance, and dynamic re-tasking in-flight.",
